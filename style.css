@@ -1,0 +1,58 @@
+@page {
+    size: 297mm 420mm;
+    margins: 5mm;
+}
+
+@font-face {
+    font-family: "Compagnon";
+    src: url("fonts/compagnon-master/fonts/Compagnon-Roman.otf");
+}
+@media screen {
+    body{
+        width: 297;
+        height: 420mm;
+        border: 1px solid black;
+        margin: 10px;
+        font-family: "Compagnon";
+    }
+}
+
+.container {
+    display: grid;
+    /* width: 50vw; */
+    height: 420mm;
+    margin: auto;
+    margin-top: 10%;
+    grid-template-columns: 150px;
+    background-color: #f44664;
+    border: 5px solid rgb(235, 178, 35); 
+}
+.open{
+    grid-column: 4;
+    grid-row: 1;
+    font-size: 20px;
+    transform: rotate(90deg);
+    width: 400px;
+    
+}
+.image{
+    grid-column: 5;
+    grid-row: 4;
+    padding: 10px;
+}
+img{
+    height: 100px;
+}
+.date{
+    grid-column: 3;
+    grid-row: 3;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.address{
+    grid-column: 3;
+    grid-row: 4;
+    padding: 10px;
+    text-align: center;
+}
